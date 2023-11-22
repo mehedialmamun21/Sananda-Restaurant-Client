@@ -18,7 +18,49 @@ const Category = () => {
                 heading={"Order Online"}
                 subHeading={"From 11:00 am To 10:00 pm"}
             ></SectionTitle>
+
             <Swiper
+                slidesPerView={5}
+                spaceBetween={10}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <img src={slide1} style={{ height: '340px' }} alt="" />
+                    <h3 className='text-2xl text-center uppercase -mt-16 text-white font-serif'>Salads</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide2} style={{ height: '340px' }} alt="" />
+                    <h3 className='text-2xl text-center uppercase -mt-16 text-white font-serif'>Pizzas</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide3} style={{ height: '340px' }} alt="" />
+                    <h3 className='text-2xl text-center uppercase -mt-16 text-white font-serif'>Soups</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide4} style={{ height: '340px' }} alt="" />
+                    <h3 className='text-2xl text-center uppercase -mt-16 text-white font-serif'>Desserts</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide5} style={{ height: '340px' }} alt="" />
+                    <h3 className='text-2xl text-center uppercase -mt-16 text-white font-serif'>Salads</h3>
+                </SwiperSlide>
+            </Swiper>
+
+        </section>
+    );
+};
+
+export default Category;
+
+
+
+
+
+{/* <Swiper
                 slidesPerView={4}
                 spaceBetween={20}
                 centeredSlides={true}
@@ -48,9 +90,4 @@ const Category = () => {
                     <img src={slide5} alt="" />
                     <h3 className='text-2xl text-center uppercase -mt-16 text-white'>Salads</h3>
                 </SwiperSlide>
-            </Swiper>
-        </section>
-    );
-};
-
-export default Category;
+            </Swiper> */}

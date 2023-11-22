@@ -26,7 +26,7 @@ const Footer = () => {
                     </div>
                 </nav>
             </div>
-            <div className="footer-center p-4 bg-base-300 text-base-content">
+            <div className="footer-center p-4 bg-gray-600 text-white">
                 <aside>
                     <p>Copyright © 2023 SANANDA - All rights reserved.</p>
                 </aside>
